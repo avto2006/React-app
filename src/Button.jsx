@@ -1,9 +1,10 @@
 import './Button.css';
+import Inputs from './Inputs';
 
 function Button() {
     return (
     <>
-      <button className='btn'>
+      <button onClick={} className='btn'>
              <p>ავტორიზაცია</p>
       </button>
     </>
