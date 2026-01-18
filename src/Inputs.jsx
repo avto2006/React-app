@@ -12,7 +12,9 @@ function Inputs() {
     if(userName && password) {
         alert('წარმატებული ავტორიზაცია')
     } else {
-        alert('შეავსეთ ორივე ველი!')
+        alert('შეავსეთ ორივე ველი!');
+        setUserName('');
+        setPassword('');
     }
 
 
