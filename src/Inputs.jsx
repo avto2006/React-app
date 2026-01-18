@@ -2,16 +2,18 @@
 import { useState } from 'react';
 import './Inputs.css';
 import Button from './Button';
-let count = 0;
+
 
 function Inputs() {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
+    const [count, setCount] = useState(0)
 
     const handleSubmit = () => {
 
     if(userName && password) {
         alert('წარმატებული ავტორიზაცია')
+        setCount(`მცდელობა ${count}`)
     } else {
         alert('შეავსეთ ორივე ველი!');
         setUserName('');
