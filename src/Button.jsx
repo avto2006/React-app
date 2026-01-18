@@ -1,11 +1,11 @@
 import './Button.css';
 import Inputs from './Inputs';
 
-function Button() {
+function Button({onClick, text}) {
     return (
     <>
-      <button onClick={} className='btn'>
-             <p>ავტორიზაცია</p>
+      <button onClick={onClick} className='btn'>
+             {text}
       </button>
     </>
     );

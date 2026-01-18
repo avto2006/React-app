@@ -15,6 +15,7 @@ function Inputs() {
         alert('შეავსეთ ორივე ველი!')
     }
 
+
 }
 
 
@@ -31,6 +32,9 @@ function Inputs() {
        placeholder='პაროლი' 
        value={password}
        onChange={e => setPassword(e.target.value)}/>
+
+
+       <Button text='ავტორიზაცია' onClick={handleSubmit} />
     </div>  
     );
 }
