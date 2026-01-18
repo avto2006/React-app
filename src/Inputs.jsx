@@ -13,11 +13,13 @@ function Inputs() {
 
     if(userName && password) {
         alert('წარმატებული ავტორიზაცია')
-        setCount(`მცდელობა ${count}`)
+        setCount(prev => prev + 1)
+
     } else {
         alert('შეავსეთ ორივე ველი!');
         setUserName('');
         setPassword('');
+        setCount(0)
     }
 
 
@@ -40,6 +42,7 @@ function Inputs() {
 
 
        <Button text='ავტორიზაცია' onClick={handleSubmit} />
+       <p>მცდელობების რაოდენობა: {count}</p>
     </div>  
     );
 }
