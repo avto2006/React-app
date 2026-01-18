@@ -1,0 +1,18 @@
+input {
+    width: 300px;
+    height: 70px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.div1{
+    display: grid;
+    gap: 6vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.satauri {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
