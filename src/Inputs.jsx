@@ -6,6 +6,12 @@ function Inputs() {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
 
+    if(userName && password) {
+        alert('წარმატებული ავტორიზაცია')
+    } else {
+        alert('შეავსეთ ორივე ველი!')
+    }
+
 
     return (
     <div className='div1'>
