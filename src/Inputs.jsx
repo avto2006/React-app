@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Inputs.css';
 import Button from './Button';
 import Input from './Input';
+import { Link } from "react-router-dom";
 
 
 function Inputs() {
@@ -61,7 +62,7 @@ function Inputs() {
             {message}
         </p>
        )}
-       <p>არ გაქვს ექაუნთი? <a className='reg' href=""> გაიარე რეგისტრაცია </a></p>
+       <p>არ გაქვს ექაუნთი? <Link className='reg' to={'./Registrer.jsx'}> გაიარე რეგისტრაცია </Link></p>
        <p>მცდელობების რაოდენობა: {count}</p>
     </div>  
     );
