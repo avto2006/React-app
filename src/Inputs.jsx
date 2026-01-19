@@ -63,6 +63,9 @@ function Inputs() {
        <p>მცდელობების რაოდენობა: {count}</p>
     </div>  
     );
+    
 }
+
+
 
 export default Inputs;
