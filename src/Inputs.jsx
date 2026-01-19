@@ -61,6 +61,7 @@ function Inputs() {
             {message}
         </p>
        )}
+       <p>არ გაქვს ექაუნთი? <a className='reg' href=""> გაიარე რეგისტრაცია </a></p>
        <p>მცდელობების რაოდენობა: {count}</p>
     </div>  
     );

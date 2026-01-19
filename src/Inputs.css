@@ -26,3 +26,7 @@ input {
   color: red;
   margin-top: 10px;
 }
+
+.reg {
+  text-decoration: underline;
+}
