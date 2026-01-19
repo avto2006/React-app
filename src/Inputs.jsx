@@ -8,19 +8,23 @@ import Input from './Input';
 function Inputs() {
     const [userName, setUserName] = useState('');
     const [password, setPassword] = useState('');
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
+    const [message, setMessage] = useState('');
+    const [messageType, setMessageType] = useState('');
 
     const handleSubmit = () => {
 
     if(userName && password) {
-        alert('წარმატებული ავტორიზაცია')
+        
         setCount(prev => prev + 1)
-
+        setMessage('წარმატებული ავტორიზაცია')
+        setMessageType('seccess')
      } else {
-        alert('შეავსეთ ორივე ველი!');
         setUserName('');
         setPassword('');
-        setCount(0)
+        setCount(0);
+        setMessage('შეავსეთ ორივე ველი!');
+        setMessageType('error')
     }
 
 
@@ -43,6 +47,11 @@ function Inputs() {
 
 
        <Button text='ავტორიზაცია' onClick={handleSubmit} />
+       {message && (
+        <p className={messageType === 'success' ? 'success-msg' : 'error-msg'}>
+            {message}
+        </p>
+       )}
        <p>მცდელობების რაოდენობა: {count}</p>
     </div>  
     );
