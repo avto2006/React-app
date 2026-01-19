@@ -18,14 +18,14 @@ function Inputs() {
         
         setCount(prev => prev + 1)
         setMessage('წარმატებული ავტორიზაცია')
-        setMessageType('seccess')
+        setMessageType('success')
      } else {
         setUserName('');
         setPassword('');
         setCount(0);
         setMessage('შეავსეთ ორივე ველი!');
-        setMessageType('error')
-    }
+        setMessageType('error');
+     }
 
 
 }

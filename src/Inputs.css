@@ -16,3 +16,13 @@ input {
     text-decoration: underline;
     text-decoration-color: red;
 }
+
+.success-msg {
+  color: green;
+  margin-top: 10px;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}
