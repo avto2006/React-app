@@ -19,7 +19,15 @@ function Inputs() {
         setCount(prev => prev + 1)
         setMessage('წარმატებული ავტორიზაცია')
         setMessageType('success')
-     } else {
+      } else if(count > 10) {
+         setMessage('ზედმეტად ბევრი მცდელობა, სცადეთ თავიდან');
+         setMessageType('error');
+         setCount(0);
+         setUserName('');
+         setPassword('');
+      }
+     
+     else {
         setUserName('');
         setPassword('');
         setCount(0);
