@@ -15,7 +15,7 @@ function Inputs() {
         alert('წარმატებული ავტორიზაცია')
         setCount(prev => prev + 1)
 
-    } else {
+     } else {
         alert('შეავსეთ ორივე ველი!');
         setUserName('');
         setPassword('');
