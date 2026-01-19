@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import './Inputs.css';
 import Button from './Button';
+import Input from './Input';
 
 
 function Inputs() {
@@ -29,12 +30,12 @@ function Inputs() {
     return (
     <div className='div1'>
         <h2 className='satauri'>გაიარე ავტორიზაცია</h2>
-       <input
+       <Input
         type="text"
          placeholder='ნომერი ან სახელი'
          value={userName} 
          onChange={e => setUserName(e.target.value)}/>
-       <input 
+       <Input 
        type="password" 
        placeholder='პაროლი' 
        value={password}
